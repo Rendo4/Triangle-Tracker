@@ -7,7 +7,7 @@
     "test": "jest",
     "debug": "node --inspect node_modules/.bin/jest --runInBand",
     "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "start": "npm run build & webpack-dev-server --open --mode development",
     "watch": "webpack --watch",
     "lint": "eslint src/*.js"
   },
@@ -22,6 +22,7 @@
   },
   "homepage": "",
   "devDependencies": {
+    "request": "2.81.0",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "@babel/core": "^7.6.0",
     "babel-loader": "^8.0.6",
